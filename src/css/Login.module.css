@@ -1,0 +1,210 @@
+body{
+    color: #555;
+    font-size: 12px;
+    font-family: "宋体";
+    line-height: 22px;
+    background: #cecccf !important; 
+    width: 100%;
+    height: 631px;
+}
+.main{
+    width: 1016px;
+    margin: 0 auto;
+}
+.user{
+    width: 1016px;
+    overflow: hidden;
+    clear: both;
+    background: #fff;
+    padding-bottom: 6px;
+}
+.u_left{
+    width: 505px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+.u_left>p{
+    width: 100%;
+    height: 508px;
+}
+.u_left img{
+    margin: 23px 18px 20px 84px;
+}
+.u_right{
+    width: 400px;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    text-align: left;
+    padding-top: 16px;
+}
+.text{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.line{
+    width: 55px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    display: inline-block;
+    top: 35px;
+    left: 71px;
+}
+/* 
+*
+* 输入框
+*/
+.form{
+    padding: 30px 34px 0 34px;
+    border: 1px solid #dcdcdc;
+    height: auto;
+    width: 400px;
+    position: relative;
+    min-height: 406px;
+    right: 0;
+}
+.block{
+    width: 364px;
+    height: 130px;
+}
+.userTab{
+    width: 365px;
+    overflow: hidden;
+    height: 65px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.i_text,.b_text{
+    width: 322px;
+    height: 40px;
+    border: #c9c9c9 1px solid;
+    padding-left: 0;
+    line-height: 40px;
+    position: absolute;
+    left: 2px;
+    z-index: 0;
+    border-radius: 4px;
+    text-indent: 32px;
+}
+.ip_text{
+    border: none;
+    width: 132px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #fff;
+    background: #ff9cb1;
+    position: absolute;
+    top: 0;
+    left: 195px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input:focus{
+    border:#e60065 1px solid;
+}
+.label{
+    width: 45px;
+    height: 35px;
+    font: 12px/25px '宋体';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    left: -4px;
+}
+.icon{
+    width: 25px;
+    height:25px;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    display: inline-block;
+}
+/*
+* 
+登录按钮 
+*/
+.f_item{
+    padding-top: 30px;
+    width: 365px;
+    overflow: hidden;
+    height: 65px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.forget_pwd {
+    position: absolute;
+    top: 0;
+    left: 3px;
+    color: #666;
+}
+.login_reg {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    color: #e50065;
+}
+.i_btn_ok{
+    width: 324px;
+    height: 43px;
+    overflow: hidden;
+    color: #fff;
+    border: 0;
+    font: 15px/43px '微软雅黑';
+    text-align: center;
+    cursor: pointer;
+    background: #e30165;
+    display: block;
+    line-height: 40px;
+    margin-left: 2px;
+    border-radius: 4px;
+    margin-top: 25px;
+}
+.other{
+    width: 365px;
+    overflow: hidden;
+    height: 57px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 280px;
+    bottom: 20px;
+    right: 0;
+    color: #6f6f6f;
+}
+.i_label{
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+.pics{
+    width: 39px;
+    height: 39px;
+    display:block;
+    margin-right:8px;
+    float:left;
+    margin-top:10px;
+}
+.footer {
+    width: 980px;
+    float: left;
+    text-align: center;
+    color: #989898;
+    padding-top: 78px;
+}
+.footer a {
+    color: #888;
+    cursor: pointer;
+    font-size: 12px;
+    padding-right: 5px;
+}

@@ -1,0 +1,40 @@
+.i_btn_ok{
+    width: 365px;
+    height: 65px;
+    position: relative;
+    padding: 0;
+    margin-top: 140px;
+    width: 324px;
+    height: 43px;
+    overflow: hidden;
+    color: #fff;
+    border: 0;
+    font: 15px/43px '微软雅黑';
+    text-align: center;
+    cursor: pointer;
+    background: #e30165;
+    display: block;
+    line-height: 40px;
+    margin-left: 2px;
+    border-radius: 4px;
+}
+.mbs_articles {
+    color: #e30164;
+    cursor: pointer;
+}
+.f_item{
+    margin-top:20px;
+}
+.footer {
+    width: 980px;
+    float: left;
+    text-align: center;
+    color: #989898;
+    padding-top: 78px;
+}
+.footer a {
+    color: #888;
+    cursor: pointer;
+    font-size: 12px;
+    padding-right: 5px;
+}

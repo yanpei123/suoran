@@ -1,0 +1,864 @@
+body{
+    background: #ffffff !important;
+}
+/* head */
+.header_wrap{
+    width: 100%;
+    position: relative;
+    left: 0;
+    background: #f5f5f5;
+    height: 29px;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 9000;
+}
+.head_nav{
+    width: 1160px;
+    height: 26px;
+    color: #999;
+    margin: 0 auto;
+    padding-right: 16px;
+    z-index: 2;
+    overflow: hidden;
+}
+.leftnav{
+    float: left;
+}
+.leftnav li{
+    float: left;
+    line-height: 30px;
+    padding: 0 5px;
+}
+.leftnav a{
+    color: #999;
+}
+.leftnav img{
+    float: left;
+    margin-top: 6px;
+    width: 18px;
+    height: 18px;
+}
+/* **
+head 右侧导航
+*/
+.rightnav{
+    float:right;
+}
+.rightnav li{
+    float: left;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 5px;
+}
+.rightnav a{
+    color: #999;
+    font-size: 12px;
+}
+.rightnav li i{
+    background-size: 100%;
+    width: 18px;
+    height: 15px;
+    position: relative;
+    top: 8px;
+    float: left;
+    left: -4px;
+}
+.weixin{
+    background: url(http://i2.mbscss.com/img/moonbasa2/item/btn_07.png) no-repeat center;
+}
+.weibo{
+    background: url(http://i3.mbscss.com/img/moonbasa2/item/btn_09.png) no-repeat center;
+}
+.phone{
+    background: url(http://i4.mbscss.com/img/moonbasa2/item/btn_11.png) no-repeat center;
+}
+.car{
+    background:url(http://i5.mbscss.com/img/moonbasa2/item/btn_13.png) no-repeat center;
+}
+.all{
+    background: url(http://i6.mbscss.com/img/moonbasa2/item/btn_15.png) no-repeat center;
+}
+/* 
+**
+搜索框logo
+*/
+.search_wrap{
+    width: 100%;
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 35px;
+}
+.btn{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo{
+    margin-top: 23px;
+    float: left;
+}
+.boundary{
+    float: left;
+    height: 25px;
+    border-left: 1px solid #d9d9d9;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.brandtype{
+    float: left;
+    margin: 20px 0 0 20px;
+}
+.brandtype p{
+    line-height: 16px;
+    margin-bottom: 2px;
+    float: left;
+    clear: both;
+    padding: 0 2px;
+}
+.textp{
+    background: #000;
+    color: #fff;
+    padding: 0 3px;
+}
+/* 
+**搜索框 right
+*/
+.searchbtn{
+    margin-top: 18px;
+    float: right;
+}
+.btn_Ts{
+    float: right;
+    background: #000;
+    border: 3px solid #000;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    width: 89px;
+    text-align: center;
+    margin-left: 2px;
+    cursor: pointer;
+    font-family: "Microsoft Yahei",arial;
+}
+.search1{
+    width: 522px;
+    float: right;
+}
+.first{
+    border: 3px solid #E40462;
+}
+.ac_inputv1{
+    width: 422px;
+    height: 30px;
+    padding-left: 5px;
+    line-height: 30px;
+    vertical-align: top;
+    color: #666;
+    margin-right: -6px;
+    border: 0;
+    *height: 28px;
+}
+.All{
+    width: 89px;
+    height: 30px;
+    line-height: 30px;
+    background: #E40462;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Microsoft Yahei",arial;
+    float: right;
+    margin-right:5px;
+}
+.bglogo{
+    height: 100px;
+    width: 100%;
+    background: url(http://i2.mbscss.com/img/moonbasa2/item/b-Suorang.jpg) center;
+}
+/* 
+**导航nav
+**/
+.navWrap{
+    width: 100%;
+    min-width: 1200px;
+}
+.nav{
+    width: 1200px;
+    margin: 0 auto;
+    height: 34px;
+    padding-top: 0;
+}
+.menu{
+    list-style: none;
+    width: 1200px;
+    height: 34px;
+    float: left;
+    padding-left: 0;
+    margin: 0;
+}
+.menu li{
+    position: relative;
+    float: left;
+    width: 109px;
+    height: 34px;
+    text-align: center;
+    background: url(http://i1.mbscss.com/img/moonbasa/2014/07/bon/srhd_bg_line.gif) no-repeat right top;
+    line-height: 32px;
+}
+.menu li a{
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-family: 微软雅黑;
+    font-size: 15px;
+    width: 100%;
+    height: 34px;
+    line-height: 32px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.menu  .on{
+    color:#8f8f8f;
+}
+.menu .last{
+    background: url() no-repeat right top;
+}
+.last a{
+    color: #c05c5c!important;
+}
+.menu li a:hover{
+    color: #8f8f8f;
+}
+/* *
+详情
+*/
+.topWrap{
+    width: 100%;
+    padding-top: 1px;
+}
+.top{
+    width: 1198px;
+    height: 682px;
+    margin: 18px auto 20px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.top_nav{
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    display: block;
+    zoom: 1;
+}
+/* big 的面包屑 */
+.big_l{
+    float: left;
+    width: 431px;
+    padding: 8px 0 14px;
+}
+.this_page{
+    float: left;
+    width: 351px;
+    padding: 0 0 5px 14px;
+}
+.this_page a{
+    color:#9a9a9a;
+}
+.mainpic{
+    width: 380px;
+    margin: 0 15px;
+    clear: both;
+    position: relative;
+    z-index: 2;
+}
+.list{
+    width: 378px;
+    height: 81px;
+    margin: 8px auto 0;
+    overflow: hidden;
+    position: absolute;
+    left: 18px;
+    bottom: 22px;
+}
+.listmenu{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.left_r{
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 79px;
+    cursor: pointer;
+    background: url(http://i2.mbscss.com/img/moonbasa2/20151209/slon.png) no-repeat 0 26px;
+}
+.right_r{
+    position: absolute;
+    right: -10px;
+    width: 33px;
+    height: 79px;
+    cursor: pointer;
+    background: url(http://i2.mbscss.com/img/moonbasa2/20151209/sron.png) no-repeat 10px 26px;
+}
+.middlepic{
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+    margin-left: 32px;
+}
+.middlepic ul{
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: auto!important;
+}
+.middlepic ul li{
+    float: left;
+    width: 60px;
+    height: 81px;
+    overflow: hidden;
+    padding:0 6px;
+}
+.middlepic ul li img{
+    width: 50px;
+    height: 68px;
+    cursor: pointer;
+}
+.bottom{
+    position: relative;
+    width: 380px;
+    height: 22px;
+    color: #484747;
+}
+.ItemStyleCode{
+    position: relative;
+    top: 0;
+    float: left;
+}
+.ItemStyleCodes{
+    position: relative;
+    top: 0;
+    float: right;
+}
+/* rightpic */
+.right_pic{
+    float: left;
+    display: inline-block;
+    width: 613px;
+    height: 635px;
+    padding: 0 55px 10px 14px;
+    color: #6a6a6a;
+    min-height: 625px;
+    border-right: 1px solid #E8E8E8;
+    margin-top: 32px;
+    margin-bottom: 15px;
+}
+.right_pic h2{
+    width: 100%;
+    overflow: hidden;
+    color: #1c1c1c;
+    font-family: 'Microsoft Yahei';
+    font-weight: 400;
+    font-size: 20px;
+}
+.right_pic em{
+    font-style: normal;
+}
+.tit{
+    color:#e50065;
+    font-size:14;
+    line-height:19px;
+     margin-top:6px;
+}
+.price{
+    background: url(http://i0.mbscss.com/img/moonbasa2/item/goods_price_bg.png);
+    height: 126px;
+    margin-top: 15px;
+    padding-left: 16px;
+    padding-top: 10px;
+    width: 563px;
+    position: relative;
+    zoom: 1;
+}
+.code{
+    width: 145px;
+    border-top: 1px dashed #D58E64;
+    float: right;
+    margin-top: 10px;
+    padding-top: 1px;
+    position: relative;
+    z-index: 2;
+}
+.cartoon_pic{
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+.mb_p{
+    float: right;
+    width: 90px;
+    margin-top: 5px;
+}
+.price_s{
+    margin: 5px 0 0 4px;
+    font-family: '微软雅黑';
+    color: #e70164;
+}
+.leftPrice{
+    height: 52px;
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    display: block;
+    color: #e50065;
+    -webkit-font-smoothing: antialiased;
+    float: left;
+    margin-left: -4px;
+}
+.leftPrice i{
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px;
+}
+.rightPrice{
+    vertical-align: top;
+    margin-left: 0;
+    padding-left: 0;
+    float: left;
+}
+.rightPrice span:first-child{
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    margin: 7px 16px 0 8px;
+    width: 55px;
+    line-height: 14px;
+    background: url(http://i2.mbscss.com/img/moonbasa2/20151209/p01.png) no-repeat;
+}
+.rightPrice span:last-child{
+    padding: 0 20px 0 10px;
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+}
+.rightPrice del {
+    text-decoration: line-through;
+}
+.priceBlock_dis{
+    width: 547px;
+    height: 22px;
+    position: relative;
+    top: 50px;
+    left: -180px;
+}
+.priceBlock_dis a{
+    color: #000;
+    cursor: pointer;
+}
+/* 
+    购物车
+*/
+.car{
+    width: 543px;
+    height: 336px;
+    overflow: hidden;
+}
+.person{
+    width: 100%;
+    overflow: hidden;
+}
+.color{
+    overflow: hidden;
+    margin-top:30px;
+}
+.color ul{
+    width: 100%;
+    color: #666;
+}
+.tti{
+    line-height: 38px;
+    float: left;
+    width: 35px;
+}
+.txt{
+    width: 360px;
+    float: left;
+}
+.txt p{
+    float: left;
+    background: url(http://i2.mbscss.com/img/moonbasa2/20130317/color_bg.jpg) no-repeat;
+    border: 0;
+    padding: 2px;
+    width: 100px;
+    height: 38px;
+    overflow: hidden;
+    margin: 0 8px 5px 0;
+}
+.txt p span{
+    float: left;
+}
+.title{
+    float: left;
+    padding: 5px 0 0 0;
+    line-height: 16px;
+    display:block;
+    width: 60px;
+    text-align: center;
+    font-style: normal;
+}
+.size{
+    width: 100%;
+    margin-top:25px;
+    overflow: hidden;
+}
+.size ul li{
+    float: left;
+}
+.sizetit{
+    float: left;
+    width: 35px;
+    line-height: 27px;
+}
+.sizetxt{
+    width: 245px;
+}
+.sizetxt span{
+    float: left;
+    min-width: 43px;
+    height: 28px;
+    margin: 0 9px 5px 0;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    font-family: arial;
+    position: relative;
+    display: block;
+}
+.sizetxt .select{
+    border: 1px solid #d4013c;
+}
+.num{
+    width: 100%;
+    height: 34px;
+    overflow: hidden;
+    margin-top: 80px;
+}
+.num ul li{
+    float: left;
+}
+.nums{
+    float: left;
+    width: 35px;
+    line-height: 27px;
+}
+.s_num{
+    float: left;
+    border: 1px solid #ccc;
+    width: 78px;
+    position: relative;
+}
+.s_num b{
+    width: 54px;
+    height: 32px;
+    display: block;
+    line-height: 32px;
+    text-align: center;
+}
+.num span{
+    float: left;
+    padding: 3px 0 0 12px;
+    color: #7f7f7f;
+}
+.add{
+    height: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #ccc;
+    width: 22px;
+    background: url(http://i2.mbscss.com/img/moonbasa2/20151209/add.png) no-repeat 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.reduce{
+    height: 15px;
+    line-height: 15px;
+    width: 22px;
+    background: url(http://i2.mbscss.com/img/moonbasa2/20151209/remove.png) no-repeat 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.num p i{
+    float: left;
+    line-height: 32px;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    color: #000;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    font-weight: lighter;
+}
+.buttons{
+    width: 560px;
+    margin: 30px 0 0 0;
+    overflow: hidden;
+}
+button{
+    float: left;
+    width: 204px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Microsoft Yahei';
+    font-size: 18px;
+    display: block;
+}
+.buy{
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #E40165;
+    color: #e70164;
+    margin-right: 30px;
+}
+.buycar{
+    background: #e50065;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #fff;
+    border: 1px solid #e50065;
+}
+.test{
+    position: relative;
+}
+.test ul li{
+    float: left;
+    padding: 0 24px 0 0;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.name{
+    height: 32px;
+}
+.name img{
+    float: left;
+    margin: 5px;
+}
+.name span{
+    vertical-align: middle;
+}
+.look{
+    width: 126px;
+    height: 639px;
+    float:left;
+    margin: 30px 0 0 20px;
+    background:#f5f5f5;
+}
+.ant_carousel{
+    text-align: center;
+    height: 639px;
+    width: 130px;
+    overflow: hidden;
+  }
+.ant_carousel img{
+    width: 105px;
+    height: 172px;
+}
+.jzjg{
+text-align: center;
+font-size: 14px;
+font-family: "微软雅黑";
+margin: 5px 0 10px;
+}
+.mainWrap{
+    width: 100%;
+    position: relative;
+    top: 35px;
+}
+.mainav{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.main_l{
+    float: left;
+    width: 190px;
+}
+.main_l img{
+    height: 295px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.mainprice{
+    height: 36px;
+    color: #1b1b1b;
+    overflow: hidden;
+    display: block;
+    line-height: 36px;
+    font-size: 18px;
+    font-family: 微软雅黑,Arial;
+    padding-left: 8px;
+    margin: -30px 0 10px 0;
+    position: relative;
+    z-index: 999;
+}
+.main_car{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background:red;
+    float:right;
+    background: url(http://i1.mbscss.com/img/moonbasa/2016/dong/161121153727.png) no-repeat center top;
+}
+.middleWrap{
+    width: 992px;
+    float: right;
+    border: 1px solid #dedede;
+}
+.domTap{
+    position: relative;
+}
+.topnav{
+    background: #e8e8e8;
+    overflow: hidden
+}
+.topnav .onselect{
+    background-color: #fff;
+    color: #222;
+    border-top: 2px solid #E60060;    
+}
+.topnav ul li{
+    float: left;
+    width: 150px;
+    height: 42px;
+    text-align: center;
+    line-height: 40px;
+    color: #545454;
+    font-family: 'Microsoft Yahei';
+    font-size: 14px;
+    border-top: 2px solid #e8e8e8;
+    cursor: pointer;
+}
+.carbtn{
+    float: right;
+    background: #e60065;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 20px;
+    color: #fff;
+    font-family: "微软雅黑";
+    cursor: pointer;
+    font-size: 16px;
+}
+.carbuy{
+    display: none;
+}
+.phonebtn{
+    float: right;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 14px;
+    font-size: 12px;
+    font-family: arial;
+    color: rgb(234, 0, 99);
+    display: block;
+}
+.phonebtn span:nth-of-type(1){
+    display: inline-block;
+    min-width: 120px;
+    padding: 0 18px 0 8px;
+    height: 40px;
+    line-height: 42px;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-position: 93% center;
+    margin: 0 5px;
+    position: relative;
+    top: -3px;
+}
+.phonebtn img{
+    float: right;
+    margin-top: 5px;
+}
+
+.phonebtn span:nth-of-type(2){
+    font-size: 24px;
+    float: right;
+    height: 42px;
+    line-height: 42px;
+    margin-right: 14px;
+    font-family: arial;
+    color: rgb(234, 0, 99);
+    display: block;
+}
+.phonebtn i{
+    font-size: 16px;
+     font-family: '微软雅黑'
+}
+.tab{
+    width: 100%;
+}
+.shunav{
+    width: 100%;
+}
+.shu_one{
+    margin: 0 0;
+    padding: 50px 10px 20px;
+}
+.attribute{
+    width: 750px;
+    margin: 0 auto;
+    border-bottom: none;
+    overflow: hidden;
+}
+.attrList{
+    width: 374px;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+    position: relative;
+    float: left;
+
+}
+.attrList dt{
+    width: 104px;
+    text-align: right;
+    background: #EEE;
+    padding-right: 10px;
+    border-right: 1px solid #e5e5e5;
+    font-weight: 700;
+    float: left;
+    display: block;
+}
+.attrList dd {
+    width: 250px;
+    padding-left: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px !important;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.fixed{
+    position: fixed;
+    background: #e8e8e8;
+    top:0;
+}
