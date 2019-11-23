@@ -62,67 +62,29 @@ class TabPhone extends Component{
     }
 }
 // 普通登录
-class TabUser extends Component{
-    constructor(props) {
-		super(props);
-		this.state = {
-            user:"",
-            pwd:''
-		};
+// class TabUser extends Component{
+//     constructor(props) {
+// 		super(props);
+// 		this.state = {
+//             user:"",
+//             pwd:''
+// 		};
 	
-    }
-    famlogin(){
-        if(this.refs.user.value == '' || this.refs.pwd.value ==''){
-            alert('不能为空')
-        }else{
-            api.getLogin({
-                userName:this.refs.user.value,
-                password:this.refs.pwd.value
-            }).then((data)=>{
-               if(data.data.code == 'success'){
-                   alert('home')
-                 // this.props.history.push('./home')
-               }else{
-                   alert('用户名或密码错误')
-               }
-            })
-        }
-     }
-    render(){
-        return(
-            <div className={login.block}>
-                <div className={login.userTab}>
-                    <label className={login.label}>
-                        <svg className={login.icon}>
-                            <use xlinkHref="#icon-icon"></use>
-                        </svg>
-                    </label>  
-                    <input type="text"  title="请输入帐号"  className={login.i_text}  placeholder="手机号/邮箱/会员卡号" ref='user'/>
-                </div>
-                <div className={login.userTab}>
-                    <label className={login.label}>
-                        <svg className={login.icon}>
-                            <use xlinkHref="#icon-mima"></use>
-                        </svg>
-                    </label>  
-                    <input type="password"  title="请输入密码"  className={login.b_text} placeholder="密码" ref='pwd'/> 
-                </div>
-                <div className={login.f_item}>
-                    <a href="/reset/step1" target="_parent" className={login.forget_pwd}>忘记密码？</a>
-                        <a className={login.login_reg} onClick={()=>this.btn()}>注册</a>
-                    <div>
-                        <input type="button" name="btnLogin"  className={login.i_btn_ok} value="立即登录" onClick={()=>this.famlogin()}/>
-                    </div>
-                </div>
-            </div>
-        )
-    }
-}
+//     }
+  
+//     render(){
+//         return(
+            
+//         )
+//     }
+// }
 class Login extends Component {
     constructor(props) {
 		super(props);
 		this.state = {
-            index: 1
+            index: 1,
+            user:"",
+            pwd:''
 		};
 	
     }
@@ -132,6 +94,23 @@ class Login extends Component {
     btn(){
         this.props.history.push('./register')
     }
+    famlogin(){
+        let user =localStorage.getItem('user');
+        if(this.refs.user.value == '' || this.refs.pwd.value ==''){
+            alert('不能为空')
+        }else{
+            api.getLogin({
+                userName:this.refs.user.value,
+                password:this.refs.pwd.value
+            }).then((data)=>{
+               if(data.data.code == 'success'){
+                    localStorage.setItem('token',data.data.token);
+                    localStorage.setItem('user',user);
+                    this.props.history.push('/home')
+               }
+            })
+        }
+     }
 
     render() {
         let index =this.state.index;
@@ -156,7 +135,35 @@ class Login extends Component {
                             </li> 
                         </ul>
                         <div className={login.form}>
-                            {this.state.index == 1 ? <TabUser></TabUser> : <TabPhone></TabPhone>}
+                            {this.state.index == 1 ? 
+                            // <TabUser></TabUser>
+                                <div className={login.block}>
+                                    <div className={login.userTab}>
+                                        <label className={login.label}>
+                                            <svg className={login.icon}>
+                                                <use xlinkHref="#icon-icon"></use>
+                                            </svg>
+                                        </label>  
+                                        <input type="text"  title="请输入帐号"  className={login.i_text}  placeholder="手机号/邮箱/会员卡号" ref='user'/>
+                                    </div>
+                                    <div className={login.userTab}>
+                                        <label className={login.label}>
+                                            <svg className={login.icon}>
+                                                <use xlinkHref="#icon-mima"></use>
+                                            </svg>
+                                        </label>  
+                                        <input type="password"  title="请输入密码"  className={login.b_text} placeholder="密码" ref='pwd'/> 
+                                    </div>
+                                    <div className={login.f_item}>
+                                        <a href="/reset/step1" target="_parent" className={login.forget_pwd}>忘记密码？</a>
+                                            <a className={login.login_reg} onClick={()=>this.btn()}>注册</a>
+                                        <div>
+                                            <input type="button" name="btnLogin"  className={login.i_btn_ok} value="立即登录" onClick={()=>this.famlogin()}/>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            : <TabPhone></TabPhone>}
 
 {/* 底部登录 */}
                             <div className={login.other}>

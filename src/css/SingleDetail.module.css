@@ -570,7 +570,7 @@ head 右侧导航
     width: 78px;
     position: relative;
 }
-.s_num b{
+.s_num .b{
     width: 54px;
     height: 32px;
     display: block;
@@ -861,4 +861,49 @@ margin: 5px 0 10px;
     position: fixed;
     background: #e8e8e8;
     top:0;
+}
+.priceBlock_dis{
+    width: 300px;
+    margin-left:180px;
+}
+.box{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.Itemtb_tl{
+    overflow: hidden;
+}
+.Itemtb_tl img{
+    margin-top: 50px;
+}
+.carname{
+    height: 160px;
+    background: url(http://images5.moonbasa.com/img/product/pro_cart.jpg) no-repeat 35% 20px;
+    color: #000;
+    font-size: 13px;
+    line-height: 26px;
+    margin: 25px 10px 0 17px;
+    padding: 0 0 8px 300px;
+    text-align: left;
+    width: 365px;
+}
+.carname p{
+    line-height: 26px;
+    margin-left: -100px;
+}
+.carname p:first-child{
+    font-size: 14px;
+    font-weight: bold;
+    width: 170px;
+    margin-top: 55px;
+    color: black;
+}
+.carname{
+    color: #D4003B;
+    font-weight: bold;
+    margin: 0 5px;
+}
+.testcar{
+    padding-top: 20px;
+    margin-left: -65px;
 }

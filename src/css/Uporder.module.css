@@ -1,0 +1,277 @@
+.wrap{
+    width: 100%;
+    padding-top: 13px;
+}
+.mains{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.dizhi{
+    width: 100%;
+    min-height:70px;
+}
+.top{
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 29px;
+    width: 981px;
+}
+.dizhi dl{
+    float: left;
+    width: 972px;
+}
+.dizhi dl dd{
+    width: 867px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    margin-inline-start: 40px;
+    float: left;
+    padding-left: 60px;
+}
+.monycar{
+    float: left;
+    display: block;
+    margin-top:10px;
+}
+.lipin{
+    padding-left: 123px;
+    width: 1075px;
+    height: 43px;
+    color: #000;
+    font-size: 12px;
+    line-height: 43px;
+}
+.lpkjh{
+    float: left;
+    padding-right: 5px;
+    height: 43px;
+    line-height: 43px;
+    color: #EB0067;
+    font-size: 14px;
+}
+.add{
+    margin-top: 14px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #da0073;
+    text-align: center;
+    line-height: 13px;
+    color: #EB0067;
+    display: inline-block;
+}
+.select{
+    margin-bottom: 20px;
+    margin-left: 123px;
+    font-size: 14px;
+    line-height: 28px;
+}
+.red_txt{
+    color: #D80178;
+}
+.titpic{
+    background: #f5f5f5;
+    height: 100px;
+}
+.spxx{
+    width: 1200px;
+    border: 1px solid #ebebeb;
+    border-top: none;
+
+    margin: 150px auto;
+}
+.xxtitle{
+    display: block;
+    padding-left: 92px;
+    width:100%;
+    height: 33px;
+    background: #f5f5f5;
+    line-height: 33px;
+}
+.xxtitle span:first-child{
+    font-size: 20px;
+}
+.xxtitle a{
+    display: block;
+    float: right;
+    margin-right: 80px;
+}
+.xxtitle a:hover{
+    color: red;
+}
+.tab{
+    padding-left:100px;
+}
+.shop{
+    width: 1020px;
+    height: 35px;
+    line-height: 35px;
+
+}
+.left{
+    float: left;
+    padding-left: 32px;
+    color: #525252;
+    font-size: 12px;
+}
+.yunfei{
+    color: #333;
+}
+.red{
+    color: #d90077;
+}
+.spxx table{
+    width: 1019px;
+    border-collapse: collapse;
+}
+.spxx table th{
+    height: 30px;
+    border: 1px solid #ebebeb;
+    background: #f5f5f5;
+    text-align: center;
+    font-weight: 100;
+    line-height: 30px;
+}   
+.tabpic{
+    text-align: left;
+    float: left;
+    margin-left: 65px;
+}
+.text{
+    overflow: hidden;
+    width: 500px;
+    text-align: left;
+}
+.text p{
+    padding-left: 10px;
+}
+.text p:last-child{
+    color: #9c9c9c;
+    margin-top: 5px;
+}
+.ttd{
+    padding: 5px 0;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    width: 636px;
+}
+.tds{
+    padding: 5px 0;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    width: 118px;
+}
+.price_icon {
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+.num{
+    text-align: center;
+    border: 1px solid #ebebeb;
+}
+.price{
+    padding: 5px 0;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    width: 144px;
+}
+.prices{
+    width:500px;
+    height: 100px;
+    margin-left: 580px;
+    margin-top: 30px;
+}
+.prices p{
+    margin-left: 300px;
+    padding-top: 10px;
+    color: #da0075;
+}
+.totprice{
+    color:#db0179;
+    font-size: 22px;
+}
+.kai p{
+    margin-left:207px;
+}
+.btnget{
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 89px;
+    width: 1198px;
+    height: 165px;
+    border-top: solid 1px #ebebeb;
+}
+.order_p{
+    float: right;
+    margin-right: 100px;
+}
+.order_p button{
+    height: 48px;
+    line-height: 48px;
+    display:block;
+    width: 278px;
+    height: 48px;
+    border: none;
+    background: #EB0067;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-family: "微软雅黑";
+    float: right;
+}
+.order_p span{
+    padding-right: 20px;
+    float: right;
+    height: 48px;
+    line-height: 48px;
+}
+.footer{
+    width: 100%;
+    margin-top:-70px;
+    padding-bottom: 50px;
+}
+.lists{
+    overflow: hidden;
+}
+.check{
+    margin-left: 115px;
+    width: 100%;
+    padding:5px 0;
+}
+.del em{
+    font-style: normal;
+    padding-left: 30px;
+    color: blue;
+}
+.xinxi{
+    width: 600px;
+    float: left;
+}
+.caozuo{
+    float: left;
+    margin-left: 300px;
+    width: 300px;
+}
+
+.tits{
+    padding-left: 92px;
+    height: 33px;
+    background: #f5f5f5;
+    line-height: 33px;
+    margin: 15px auto;
+}
+.tits span:first-child{
+    width: 160px;
+    height: 33px;
+    font-size: 20px;
+    display: block;
+    float: left;
+}
+.tits span:last-child{
+    margin-left: 15px;
+    height: 33px;
+    color: #e50065;
+    line-height: 33px;
+}

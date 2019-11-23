@@ -17,30 +17,30 @@ class Register extends Component {
 	
     }
     select(){
-        if(this.refs.ipt.value == '' || this.refs.pwd.value =='' || this.refs.ipt.value ==''){
-                alert('不能为空')
-            }else if(this.refs.pwd.value.length <8){
-                alert('密码长度不能小于8位')
-            }else if(this.refs.pwd.value != this.refs.spwd.value){
-                alert('请保持密码一致')
-            }else if(this.state.phone.test(this.refs.ipt.value)){
-                api.getRegist({
-                    userName:this.refs.ipt.value,
-                    password:this.refs.pwd.value,
-                    nickName:'',
-                    avatar:''
-                }).then((data)=>{
-                    console.log(data)
-                   if(data.data.code == 'error'){
-                       alert(data.data.message)  
-                   }else{
-                        localStorage.setItem('token',data.data.token)
-                        this.props.history.push('./login')
-                   }
-                })
-            }else{
-                alert('格式错误')
-            }
+        let user =localStorage.getItem('user');
+        if(this.refs.ipt.value == user){
+            alert('该用户重复')
+        }else if(this.refs.pwd.value.length <8){
+            alert('密码长度不能小于8位')
+        }else if(this.refs.pwd.value != this.refs.spwd.value){
+            alert('请保持密码一致')
+        }else if(this.state.phone.test(this.refs.ipt.value)){
+            api.getRegist({
+                userName:this.refs.ipt.value,
+                password:this.refs.pwd.value,
+                nickName:'',
+                avatar:''
+            }).then((data)=>{
+                console.log(data)
+                if(data.status == 200){
+                    localStorage.setItem('token',data.data.token)
+                    localStorage.setItem('user',this.refs.ipt.value);
+                    this.props.history.push('./login')
+                }
+            })
+        }else{
+            alert('格式错误')
+        }
     }
 
     change(n){

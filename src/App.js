@@ -3,11 +3,11 @@ import {BrowserRouter as Router,Route,NavLink,Redirect} from "react-router-dom";
 import './App.css';
 import Home from "./views/Home";
 import Prolist from "./views/Prolist";
-import Cartlist from "./views/Cartlist";
 import Login from './views/login/Login'
 import Register from './views/register/Register';
 import SingDetail from './views/singledetail/SingDetail';
-
+import Address from './views/address/Address';
+import Uporder from './views/uporder/Uporder';
 
 function App() {
   return (
@@ -15,14 +15,13 @@ function App() {
    
      	<Router>
 	     	<div>
-		     <Route path="/home" component={Home} ></Route>
-		     <Route path="/prolist" component={Prolist} ></Route>
-		     <Route path="/cartlist/:id" component={Cartlist} ></Route>
-			 <Route path='/login' component={Login}/>
+		    <Route path="/home" component={Home} ></Route>
+		    <Route path="/prolist" component={Prolist} ></Route>
+			<Route path='/login' component={Login}/>
             <Route path='/register' component={Register}/>
-            <Route path= '/singledetail' component={SingDetail}/>
-		     
-		     
+            <Route path= '/singledetail/:id' component={SingDetail}/>
+			<Route path='/address' component={Address}/>
+		    <Route path='/uporder' component={Uporder}/>
 		     {/* <Redirect to="/prolist"/> */}
 	     	</div>
      	</Router>

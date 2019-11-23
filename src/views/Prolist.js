@@ -358,7 +358,7 @@ export default class Prolist extends React.Component{
 											
 											this.state.list.map((item)=>{
 												return(
-													<NavLink to={"/cartlist/"+item._id}>
+													<NavLink to={"/singledetail/"+item._id}>
 													<li key={item._id}>
 														<img className={prolist.prolistullargeimg} src={item.coverImg}/>
 														<p className={prolist.prolistulcenter}>
@@ -554,7 +554,7 @@ Copyright © 2010-2019 梦芭莎官方网站，广州摩拉网络科技有限公
 			url:"http://api.cat-shop.penkuoer.com/api/v1/products",
 			params:{per:100,page:1,name:"",product_category:""}
 		}).then((data)=>{
-			console.log(data.data.products)
+			//console.log(data.data.products)
 			this.setState({list:data.data.products})
 		})
 	}
