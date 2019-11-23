@@ -61,23 +61,6 @@ class TabPhone extends Component{
         )
     }
 }
-// 普通登录
-// class TabUser extends Component{
-//     constructor(props) {
-// 		super(props);
-// 		this.state = {
-//             user:"",
-//             pwd:''
-// 		};
-	
-//     }
-  
-//     render(){
-//         return(
-            
-//         )
-//     }
-// }
 class Login extends Component {
     constructor(props) {
 		super(props);
