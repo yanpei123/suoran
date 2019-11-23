@@ -80,8 +80,9 @@ class TabUser extends Component{
                 password:this.refs.pwd.value
             }).then((data)=>{
                if(data.data.code == 'success'){
-                   alert('home')
-                 // this.props.history.push('./home')
+                   //alert('home')
+                   console.log(this.props)
+                //this.props.history.push('./home')
                }else{
                    alert('用户名或密码错误')
                }

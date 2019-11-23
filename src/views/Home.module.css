@@ -68,6 +68,9 @@
 	float: right;
 	margin-right: 50px;
 }
+.searchright input{
+	float: left;
+}
 
 .btnzhan{
 	color: #fff;
@@ -164,27 +167,29 @@
 
 .prolist{
 	width:100% ;
-	
-	
+	background: #f5e9d1;
 	}
 .prolistul{
-	width: 100%;
+	width: 96%;
+	margin: 0 auto;
 	
-	background: #f5e9d1;
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	
 }
 .prolistul li{
+	
 	list-style: none;
 	margin-bottom: 50px;
-	width: 400px;
-	height: 600px;
-	
-	
-	float: left;
+	width: 340px;
+	height: 470px;
 	text-align: center;
+}
+.prolistul li img{
+	width: 340px;
+	height:400px;
+	
 }
 .prolistimg{
 	width: 400px;
@@ -216,8 +221,9 @@
 	width: 90%;
 }
 .footlist{
+	
 	margin-top: 40px;
-	width: 150px;
+	width: 140px;
 	height:160px;
 	float: left;
 	

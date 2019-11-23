@@ -30,7 +30,7 @@ export default class Home extends Component{
 					</div>
 					<div className={home.headright}>
 						<ul className={home.headul_right}>
-							<li>登录</li>
+							<NavLink to="./login/Login"><li>登录</li></NavLink>
 							<li>注册</li>
 							<li><Icon type="wechat" style={{ fontSize: '12px', color: '#469f45' }}/>微信</li>
 							<li><Icon type="weibo" style={{ fontSize: '12px', color: '#ff8e1a' }}/>微博</li>
@@ -109,7 +109,13 @@ export default class Home extends Component{
 			{/*热卖推荐*/}
 			{/*产品*/}
 			<div className={home.prolist}>
-				<ul className={home.prolistul}>
+				<img  src="http://i3.mbscss.com/img/moonbasa/2019/kyq/M11_21_111732_01.jpg"/>
+				<img src="http://i5.mbscss.com/img/moonbasa/2019/kyq/M11_21_111732_02.jpg"/>
+			
+			
+			
+			
+				{/*<ul className={home.prolistul}>
 				{
 					this.state.list.map((item)=>{
 						return(
@@ -122,13 +128,14 @@ export default class Home extends Component{
 						)
 					})
 				}
-			</ul>
+			</ul>*/}
 			
-			{/*分页*/}
+			{/*分页
 			<Pagination className={home.pagination} defaultCurrent={1} total={500} />
-			{/*分页*/}
+			分页*/}
 			
-			</div>
+		</div>
+				
 			
 			{/*产品*/}
 			{/*foot-top*/}
@@ -279,7 +286,7 @@ Copyright © 2010-2019 梦芭莎官方网站，广州摩拉网络科技有限公
 	componentDidMount(){
 		axios({
 			url:"http://api.cat-shop.penkuoer.com/api/v1/products",
-			params:{per:30,page:2,name:"",product_category:""}
+			params:{per:30,page:1,name:"",product_category:""}
 		}).then((data)=>{
 			console.log(data.data.products)
 			this.setState({list:data.data.products})

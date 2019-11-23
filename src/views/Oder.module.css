@@ -1,0 +1,430 @@
+*{margin: 0;padding: 0;}
+.head{
+	height: 133px;
+	
+}
+.headtop{
+	height:26px;
+	
+	border-top:solid 1px #b2b6b7;
+	border-bottom: solid 1px #f6f6f6;
+}
+.headtopleft{
+	width:410px;
+	height:26px;
+	
+	margin-left: 97px;
+	float: left;
+}
+.headtopleft img{
+	width: 192px;
+	height: 109px;
+	float: left;
+	
+}
+.headtopleft span{
+	display: inline-block;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-size: 12px;
+	color:#7e7e7e;
+	float: left;
+	line-height: 26px;
+}
+.headtopright{
+	width:400px;
+	height:26px;
+	float: right;
+	margin-right: 73px;
+	
+}
+.headtoprightul{
+	width:400px;
+	height:23px;
+}
+.headtoprightul li{
+	line-height: 22px;
+	padding-left: 9px;
+	padding-right: 9px;
+	color:#757575;
+	font-size: 12px;
+	list-style: none;
+	float: left;
+	border-right:solid 1px #e8e8e8 ;
+}
+.headtoprightul .headtoprightullifirst{
+	border:0;
+}
+.headtoprightul .headtoprightullilast{
+	border:0;
+}
+.Icon{
+	margin-right: 4px;
+}
+.headjindutiao{
+	width:615px;
+	height:25px;
+	border: solid 1px #a8335f;
+	border-radius: 5px;
+	margin-top:32px;
+	margin-left: 656px;
+}
+.headjindutiao p{
+	display: inline-block;
+	border-radius: 3px;
+	width:204px;
+	height:23px;
+	font-size: 12px;
+	color:#7c8582;
+	line-height: 24px;
+	text-align: center;
+	
+}
+.headjindutiao .headjindutiaofirst{
+	background: #e60067;
+	color:#ffcfff;
+}
+.center{
+	width:100%;
+	margin-bottom: 30px;
+	background: #f6f6f6;
+	
+	
+}
+.centersuccess{
+	width: 1199px;
+	height:288px ;
+	border-bottom: solid 1px #cdcdcd;
+	margin: 0 auto;
+	background: #fff;
+}
+.centersuccesstop{
+	width: 1199px;
+	height: 107px;
+	background: #ececec;
+	overflow: hidden;
+	
+	
+}
+.centersuccesstopp1{
+	font-weight: bold;
+	font-size: 18px;
+	color: #ac3263;
+	line-height:1 ;
+	text-indent: 40px;
+	margin-top: 28px;
+}
+.centersuccesstopdiv{
+	margin-top: 20px;
+	margin-left: 127px;
+	height: 30px;
+	
+}
+.centersuccesstopdiv p{
+	float: left;
+	font-size: 14px;
+	color: #595959;
+}
+.centersuccesstopdivp{
+	margin-left: 394px;
+	
+}
+.centersuccesstoptime{
+	font-size: 18px;
+	color: #ad175f;
+	font-weight: 600;
+	
+}
+.centersuccesstopprice{
+	font-size: 20px;
+	color: #ad175f;
+	font-weight: bold;
+	
+}
+.centersuccesstiao{
+	width: 996px;
+	height: 44px;
+	border: solid 1px #eaeaea;
+	margin: 20px auto;
+}
+.centersuccesstiaoleft{
+	width:318px ;
+	height: 44px;
+	border-right: solid 1px #eaeaea ;
+	
+	float: left;
+}
+.centersuccesstiaoleft p{
+	font-size:14px ;
+	line-height:44px;
+	color:#4d4d4d;
+	text-align: center;
+}
+.centersuccesstiaoright{
+	width: 676px;
+	float: left;
+	height: 44px;
+	
+	
+	
+}
+.centersuccesstiaoright p{
+	display: inline-block;
+	padding-left:27px ;
+	padding-right:27px;
+	font-size:14px ;
+	line-height:44px ;
+	color:#4d4d4d;
+	line-height:44px ;
+	text-align: center;
+	
+}
+.centersuccesstiaorightp1{
+	margin-left: 27px;
+}
+.remind{
+	width: 996px; 
+	height: 30px;
+	margin: 30px auto;
+	
+}
+.remind p{
+	float: left;
+	font-size: 12px;
+	color: #505050;
+}
+.remind p span{
+	color: #882858;
+}
+.remind .remindp2{
+	margin-left:190px ;
+	color: #9b1c49;
+}
+.remind .remindp2 span{
+	padding-left: 9px;
+	padding-right: 9px;
+	
+}
+.allpay{
+	width: 123px;
+	height: 33px;
+	
+	margin-left: 175px;
+	font-size: 16px;
+	color: #2d2a31;
+	text-align: center;
+	line-height: 32px;
+	margin-top: -6px;
+	z-index: 1;
+	
+	border: solid 1px #cacaca;
+	border-bottom:solid 1px #fff ;
+}
+.pay{
+	width: 1199px;
+	height: 1100px;
+	background: #fff;
+	margin: 0 auto;
+	}
+.payquickpayment{
+	width: 1199px;
+	height: 320px;
+	
+}
+
+.payquickpaymentzhifu{
+	width: 1199px;
+	height: 160px;
+	
+}
+.payquickpaymentwang{
+	width: 1199px;
+	height: 270px;
+	
+}
+
+
+.payquickpaymenttop{
+	font-size: 18px;
+	color: #494c51;
+	font-weight: bold;
+	margin-left: 100px;
+	line-height: 62px;
+}
+.payquickpayment img{
+	float: left;
+	margin-right:70px ;
+}
+.payquickpaymentimg1{
+	margin-left: 100px;
+}
+.payul{
+	width: 872px;
+	margin-left: 80px;
+	display: flex;
+	justify-content: space-around;
+}
+.payul li{
+	border:solid 1px #ebebeb;
+	width: 147px;
+	height: 44px;
+	
+}
+.payul li img{
+	width: 147px;
+	height: 44px;
+}
+.payulwang{
+	margin-left: 80px;
+	width: 1000px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	
+	
+	
+}
+.payulwang li{
+	margin-left: 16px;
+	margin-right: 16px;
+	
+	margin-bottom: 20px;
+	border:solid 1px #ebebeb;
+	width: 147px;
+	height: 44px;
+}
+.payulwang li img{
+	width: 147px;
+	height: 44px;
+}
+
+.payliji{
+	margin-top: ;
+	margin: 0 auto;
+	width: 279px;
+	height: 48px;
+	background: #eb0067;
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+	line-height: 48px;
+	margin-left: 460px;
+	margin-top: 20px;
+	
+}
+.foot{
+	margin-top: 10px;
+	width: 100%;
+	height: 200px;
+	background: #ececec;
+	display: flex;
+	justify-content: space-around;
+}
+.footconent{
+	width: 90%;
+}
+.footlist{
+	
+	margin-top: 40px;
+	width: 140px;
+	height:160px;
+	float: left;
+	
+}
+.footlist li{
+	height: 24px;
+	line-height: 18px;
+	color:#787377;
+	text-align: center;
+	list-style: none;
+}
+.footlist li:hover{
+	color:#f24e95;
+}
+.footlisttit{
+	color:#000000;
+	font-weight: bold;
+	
+}
+.server{
+	margin-top: 20px;
+}
+.footcenter{
+	width: 100%;
+	height: 100px;
+
+	overflow: hidden;
+}
+.footcenterul{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	height: 100px;
+}
+.footcenterul li{
+	width:270px;
+	list-style: none;
+	float: left;
+}
+
+
+.footcenterulleft{
+	width:50px;
+	height: 60px;
+	
+	float: left;
+}
+.footcenterulright{
+	width: 200px;
+	height: 60px;
+	
+	float: left;
+	
+	
+}
+.footcenterulright p{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.footcenterulright p span{
+	color:#6d6d6d;
+	font-size: 14px;
+}
+.footfoot{
+	display: flex;
+	flex-direction: column;
+	
+	align-items: center;
+	width: 100%;
+	height: 180px;
+	
+}
+.footfootul{
+	margin-top: 10px;
+	height: 30px;
+	
+	
+}
+.footfootul li{
+	color: #6d6e69;
+	list-style: none;
+	float: left;
+	padding: 10px;
+}
+.footfootul li:hover{
+	color:#823563;
+}
+.footfootul p{
+	color: #6d6e69;
+}
+.footfootimg img{
+	float: left;
+}
+.thire{
+	margin-left: 60px;
+}
+
+
+
+

@@ -33,7 +33,7 @@ export default class Prolist extends React.Component{
 					</div>
 					<div className={prolist.headright}>
 						<ul className={prolist.headul_right}>
-							<li>登录</li>
+							<NavLink to="./login/Login"><li>登录</li></NavLink>
 							<li>注册</li>
 							<li><Icon type="wechat" style={{ fontSize: '12px', color: '#469f45' }}/>微信</li>
 							<li><Icon type="weibo" style={{ fontSize: '12px', color: '#ff8e1a' }}/>微博</li>
@@ -355,10 +355,9 @@ export default class Prolist extends React.Component{
 									<ul className={prolist.prolistul}>
 									
 										{
-											
 											this.state.list.map((item)=>{
 												return(
-													<NavLink to={"/cartlist/"+item._id}>
+													<NavLink to={"/cartlist"}>
 													<li key={item._id}>
 														<img className={prolist.prolistullargeimg} src={item.coverImg}/>
 														<p className={prolist.prolistulcenter}>
