@@ -31,7 +31,7 @@ export default class Home extends Component{
 					<div className={home.headright}>
 						<ul className={home.headul_right}>
 							<NavLink to="./login/Login"><li>登录</li></NavLink>
-							<li>注册</li>
+							<NavLink to="./register/Register"><li>注册</li></NavLink>
 							<li><Icon type="wechat" style={{ fontSize: '12px', color: '#469f45' }}/>微信</li>
 							<li><Icon type="weibo" style={{ fontSize: '12px', color: '#ff8e1a' }}/>微博</li>
 							<li><Icon type="shake" style={{ fontSize: '12px', color: '#7e2545' }}/>手机版</li>

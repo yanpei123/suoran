@@ -264,7 +264,7 @@ export default class Cartlist extends React.Component{
 							<span className={cartlist.moneytot}> 折后商品金额总计：</span>
 							<span className={cartlist.money}> ￥{this.state.numtotalprice}</span>
 						</p>
-						<NavLink to={{pathname:"/oder",query:{numtotalprice:this.state.numtotalprice}}}><input className={cartlist.gopay}  type="button" value="去结算"/></NavLink>
+						<NavLink to={{pathname:"/address",query:{numtotalprice:this.state.numtotalprice}}}><input className={cartlist.gopay}  type="button" value="去结算"/></NavLink>
 					</div>
 				</div>
 				

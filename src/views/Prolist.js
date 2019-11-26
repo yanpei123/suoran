@@ -358,7 +358,7 @@ export default class Prolist extends React.Component{
 											this.state.list.map((item)=>{
 												return(
 
-													<NavLink to={"/cartlist"}>
+													<NavLink to={"/singledetail/"+item._id}>
 													<li key={item._id}>
 														<img className={prolist.prolistullargeimg} src={item.coverImg}/>
 														<p className={prolist.prolistulcenter}>

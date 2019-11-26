@@ -1,9 +1,12 @@
 import  React, {Component } from 'react';
+import {NavLink} from "react-router-dom";
 import add from '../../css/Address.module.css';
 import { isMethod } from '@babel/types';
 import * as api from '../../api/address';
 import Head from '../common/Head';
 import Footer from '../common/Footer';
+
+
 //footer
 
 class Address extends Component {
@@ -13,6 +16,7 @@ class Address extends Component {
             username:'',
             phone:'',
             address:'',
+            numtotalprice:0
 
         }
     }
@@ -109,13 +113,17 @@ class Address extends Component {
                                     <span className={add.grey}>电话格式：如：010-65690100-021</span>
                                 </div>
                             </div>
-                            <button className={add.btn} onClick={()=>this.btn()}>确定</button>
+                           <NavLink to={{pathname:"/uporder",query:{numtotalprice:this.state.numtotalprice}}}> <button className={add.btn} onClick={()=>this.btn()}>确定</button></NavLink>
                         </div>
                     </div>
                 </div>
                 <Footer></Footer>
             </div>
         );
+    }
+    componentDidMount(){
+    	console.log(this.props.location.query.numtotalprice)
+		this.setState({numtotalprice:this.props.location.query.numtotalprice})
     }
 }
 

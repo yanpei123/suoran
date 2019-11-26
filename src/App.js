@@ -19,7 +19,7 @@ function App() {
      	<Router>
 	     	<div>
 		    <Route path="/home" component={Home} ></Route>
-		    <Route path="/prolist" component={Prolist} ></Route>
+		    <Route path="/prolist/" component={Prolist} ></Route>
 			<Route path="/cartlist" component={Cartlist} ></Route>
 			<Route path='/login' component={Login}/>
             <Route path='/register' component={Register}/>

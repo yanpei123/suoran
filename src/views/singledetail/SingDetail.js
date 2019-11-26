@@ -363,7 +363,8 @@ class SingDetail extends Component {
       };
 //立即购买
     timebuy(){
-        alert('去购物车列表')
+        //alert('去购物车列表')
+        this.props.history.push('/cartlist')
     }
     render() {
        let item=this.state.str;
@@ -547,7 +548,8 @@ class SingDetail extends Component {
         )
     }
     componentDidMount(){
-       let id =this.props.match.params.id;
+    	console.log(this.props)
+      let id =this.props.match.params.id;
         api.getDetail(
             // '5d8e06bcfe04943d5e540425'
             id

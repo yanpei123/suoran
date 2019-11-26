@@ -1,4 +1,5 @@
 import  React, {Component } from 'react';
+import {NavLink} from "react-router-dom";
 import add from '../../css/Address.module.css';
 import order from '../../css/Uporder.module.css';
 import { isMethod, blockStatement } from '@babel/types';
@@ -27,7 +28,8 @@ class Order extends Component {
             receiver:'',
             regions:'',
             obj:{},
-            olist:[]
+            olist:[],
+            numtotalprice:0
 
         }
     }
@@ -83,7 +85,9 @@ class Order extends Component {
         })
     }
 // 提交订单
-    order(){
+    oder(){
+    	
+    	
      //   console.log(this.state.olist)
         let receiver=this.refs.receiver.value,
             regions=this.refs.regions.value,
@@ -99,6 +103,7 @@ class Order extends Component {
         ).then((data)=>{
             if(data.data.code == 'success'){
                 alert(data.data.message)
+                this.props.history.push("/oder")
             }
         })
     }
@@ -254,7 +259,7 @@ class Order extends Component {
                             <div className={order.prices}>
                                 <p>商品总价：</p>
                                 <p>配送费:免配运费</p>
-                                <p>应付金额：<span className={order.totprice}>￥299</span></p>
+                                <p>应付金额：<span className={order.totprice}>￥{this.state.numtotalprice}</span></p>
                                 <div className={order.kai}>
                                     <p style={{width:260}}>如需开具发票，请在订单签收7天后联系客服开具</p>
                                 </div>
@@ -262,7 +267,7 @@ class Order extends Component {
                         </div>
                         <div className={order.btnget}>
                             <div className={order.order_p}>
-                            <button onClick={()=>this.order()}>提交订单</button>
+                            <NavLink to={{pathname:"/oder",query:{numtotalprice:this.state.numtotalprice}}}><button onClick={()=>this.oder()}>提交订单</button></NavLink>
                             <span>请核对以上信息，确认无误后点击"提交订单"</span>  
                             </div>
                         </div>
@@ -275,6 +280,9 @@ class Order extends Component {
         )
     }
     componentDidMount(){
+    	console.log(this.props.location.query.numtotalprice)
+		this.setState({numtotalprice:this.props.location.query.numtotalprice})
+    	
         let token =localStorage.getItem('token')
         api.getList(
             {
